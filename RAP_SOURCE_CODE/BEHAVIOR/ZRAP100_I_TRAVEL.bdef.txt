@@ -1,0 +1,3 @@
+define behavior for ZRAP100_I_TRAVEL
+implementation in class ZBP_RAP100_I_TRAVEL unique;
+create; update; delete;

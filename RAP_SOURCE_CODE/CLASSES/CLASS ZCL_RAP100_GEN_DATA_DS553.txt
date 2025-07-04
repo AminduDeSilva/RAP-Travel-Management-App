@@ -1,0 +1,60 @@
+CLASS ZCL_RAP100_GEN_DATA_DS553 DEFINITION
+  PUBLIC
+  FINAL
+  CREATE PUBLIC .
+
+  PUBLIC SECTION.
+    INTERFACES if_oo_adt_classrun.
+  PROTECTED SECTION.
+  PRIVATE SECTION.
+ENDCLASS.
+
+CLASS ZCL_RAP100_GEN_DATA_DS553 IMPLEMENTATION.
+
+  METHOD if_oo_adt_classrun~main.
+
+    " Manually declare a table type since system one may not exist
+    TYPES: tt_atrav2 TYPE STANDARD TABLE OF zrap100_atrav2 WITH EMPTY KEY.
+
+    DATA:
+      lt_demo_data TYPE tt_atrav2,
+      lv_timestamp TYPE timestampl,
+      attachment   TYPE xstring VALUE 'Demo Attachment',
+      file_name    TYPE c LENGTH 80 VALUE 'demo.txt',
+      mime_type    TYPE c LENGTH 50 VALUE 'text/plain'.
+
+    " Get current timestamp (allowed in ABAP trial)
+    GET TIME STAMP FIELD lv_timestamp.
+
+    " Fill demo data
+    lt_demo_data = VALUE tt_atrav2(
+      ( client = sy-mandt travel_id = '0000000001' agency_id = '000001' customer_id = '000001'
+        begin_date = '20230601' end_date = '20230605' booking_fee = '20.00' total_price = '200.00'
+        currency_code = 'EUR' description = 'Vacation' overall_status = 'O'
+        attachment = attachment mime_type = mime_type file_name = file_name
+        created_by = sy-uname created_at = lv_timestamp
+        local_last_changed_by = sy-uname local_last_changed_at = lv_timestamp
+        last_changed_at = lv_timestamp )
+
+      ( client = sy-mandt travel_id = '0000000002' agency_id = '000002' customer_id = '000002'
+        begin_date = '20230610' end_date = '20230615' booking_fee = '15.00' total_price = '150.00'
+        currency_code = 'EUR' description = 'Business Trip' overall_status = 'A'
+        attachment = attachment mime_type = mime_type file_name = file_name
+        created_by = sy-uname created_at = lv_timestamp
+        local_last_changed_by = sy-uname local_last_changed_at = lv_timestamp
+        last_changed_at = lv_timestamp )
+    ).
+
+    " Clean and insert
+    DELETE FROM zrap100_atrav2.
+    INSERT zrap100_atrav2 FROM TABLE @lt_demo_data.
+    COMMIT WORK.
+
+    out->write( |[RAP100] Demo data inserted into ZRAP100_ATRAV2.| ).
+
+  ENDMETHOD.
+
+ENDCLASS.
+
+
+

@@ -1,0 +1,2 @@
+Service Binding ZUI_RAP100_ATRAV2_O4
+Service for ZC_RAP100_ATRAV2_O4 (optional)

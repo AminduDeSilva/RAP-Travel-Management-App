@@ -1,0 +1,4 @@
+define table ZRAP100_ATRAV2 {
+  key TravelId : abap.numc(10);
+  ...
+};

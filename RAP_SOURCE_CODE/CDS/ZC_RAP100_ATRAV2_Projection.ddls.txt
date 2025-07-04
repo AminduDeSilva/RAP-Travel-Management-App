@@ -1,0 +1,3 @@
+-- CDS Projection View: ZC_RAP100_ATRAV2
+@AccessControl.authorizationCheck: #NOT_REQUIRED
+define root view entity ZC_RAP100_ATRAV2 as projection on ZRAP100_C_TRAVEL { ... };

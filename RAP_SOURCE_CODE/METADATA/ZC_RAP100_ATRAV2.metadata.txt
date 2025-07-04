@@ -1,0 +1,3 @@
+@UI.headerInfo.title.value: 'TravelId'
+@UI.facet: [ { id: 'Main', type: #IDENTIFICATION_REFERENCE, label: 'General Info' } ]
+annotate entity ZC_RAP100_ATRAV2 with { ... };
