@@ -41,6 +41,12 @@ This project implements a simplified Travel Management application using SAP BTP
 
     GitHub for version control
 
+## ⚠️ Disclaimer
+
+This project was originally implemented and tested on a SAP BTP ABAP Trial system, which automatically expired after 90 days.
+    As a result, the source files were manually reconstructed based on memory, screenshots, and the official SAP tutorial.
+    Some content in the RAP_SOURCE_CODE/ folder may differ slightly from the original implementation, but the overall structure and concepts are preserved to showcase the full RAP architecture and development process.
+    
 ## How to reproduce
 
     Clone this repo in Eclipse (ADT)
@@ -55,7 +61,9 @@ This project implements a simplified Travel Management application using SAP BTP
 ## Tutorial Reference
 
 This app was created by following this tutorial: (https://developers.sap.com/tutorials/abap-environment-rap100-generate-ui-service.html)
-SAP Developer Center
-➡️ Generate UI from RAP
+SAP Developer Center - Generate UI from RAP
+
+
+
 
 
