@@ -10,7 +10,7 @@ This project implements a simplified Travel Management application using SAP BTP
 - Attachment, metadata extension, and draft handling
 - Create, update, and delete entries via auto-generated Fiori UI
 ----------------------
-<img width="1388" alt="preview_list_page" src="https://github.com/user-attachments/assets/a8089ed7-41fa-4fd5-8d48-0b4124427891" />
+<img width="1388" alt="preview_list_page" src="https://github.com/user-attachments/assets/b667d9ec-9b0f-4acf-bb53-affcc36946ee" />" />
 
 ----------------------
 
@@ -35,27 +35,34 @@ This project implements a simplified Travel Management application using SAP BTP
 
     Eclipse with ADT (ABAP Development Tools)
 
-    CDS Views, Annotations
-
     Fiori Elements Preview
 
-    GitHub for version control
+    
 
 ## ⚠️ Disclaimer
 
 This project was originally implemented and tested on a SAP BTP ABAP Trial system, which automatically expired after 90 days.
-    As a result, the source files were manually copied from the project and saved here as txt files.
+    Therefore, the source files were manually copied from the project and saved here as txt files.
     Some content in the RAP_SOURCE_CODE/ folder may differ slightly from the original implementation, but the overall structure and concepts are preserved to showcase the full RAP architecture and development process.
+
+## Project Structure
+
+This project follows the SAP RAP (RESTful Application Programming) model structure with organized folders for different ABAP artifacts:
+
+<img width="1200" alt="project_structure" src="https://github.com/user-attachments/assets/694a7b06-e3c2-4660-92e3-6d6b1a2a7ae7" />
+
+
+----------------------
     
 ## How to reproduce
 
-    Clone this repo in Eclipse (ADT)
+    Use the ABAP trial system
 
-    Use the ABAP trial system (CB9980001691 or similar)
+    Create these files in Eclipse (ADT)
+     
+    Activate the travel table 
 
-    Activate the travel table (ZRAP100_ATRAV2)
-
-    Generate data using the class ZCL_RAP100_GEN_DATA_XXXX
+    Generate data using the class 
 
     Open the service binding preview to see the app
 ## Tutorial Reference

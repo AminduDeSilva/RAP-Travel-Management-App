@@ -1,3 +1,0 @@
-define behavior for projection ZC_RAP100_ATRAV2
-use ZRAP100_ATRAV2;
-use create; use update; use delete;

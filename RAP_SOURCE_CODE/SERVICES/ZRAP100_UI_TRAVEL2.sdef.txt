@@ -1,3 +1,0 @@
-define service ZRAP100_UI_TRAVEL2 {
-  expose ZC_RAP100_ATRAV2;
-};

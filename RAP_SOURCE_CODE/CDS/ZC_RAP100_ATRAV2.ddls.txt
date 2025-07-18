@@ -1,4 +1,0 @@
--- CDS View: ZC_RAP100_ATRAV2
-@AccessControl.authorizationCheck: #NOT_REQUIRED
-@EndUserText.label: 'Travel Projection View'
-define root view entity ZC_RAP100_ATRAV2 as select from ZRAP100_I_TRAVEL { ... };

@@ -1,5 +1,0 @@
-define table ZRAP100_ATRAV2_D {
-  key TravelId : abap.numc(10);
-  IsDraft : abap.boolean;
-  ...
-};

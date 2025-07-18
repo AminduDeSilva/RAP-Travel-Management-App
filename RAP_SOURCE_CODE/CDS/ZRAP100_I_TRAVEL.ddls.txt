@@ -1,2 +1,0 @@
--- CDS View: ZRAP100_I_TRAVEL
-define view entity ZRAP100_I_TRAVEL as select from ZRAP100_ATRAV2 { ... };

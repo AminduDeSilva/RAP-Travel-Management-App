@@ -1,2 +1,0 @@
-@UI.facet: [ { id: 'Main', type: #IDENTIFICATION_REFERENCE, label: 'General Info' } ]
-annotate entity ZRAP100_I_TRAVEL with { ... };

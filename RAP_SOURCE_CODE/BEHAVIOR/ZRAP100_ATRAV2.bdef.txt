@@ -1,3 +1,0 @@
-define behavior for ZRAP100_ATRAV2
-implementation in class ZBP_RAP100_ATRAV2 unique;
-create; update; delete;
