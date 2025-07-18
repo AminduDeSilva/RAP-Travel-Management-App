@@ -44,7 +44,7 @@ This project implements a simplified Travel Management application using SAP BTP
 ## ⚠️ Disclaimer
 
 This project was originally implemented and tested on a SAP BTP ABAP Trial system, which automatically expired after 90 days.
-    As a result, the source files were manually reconstructed based on memory, screenshots, and the official SAP tutorial.
+    As a result, the source files were manually copied from the project and saved here as txt files.
     Some content in the RAP_SOURCE_CODE/ folder may differ slightly from the original implementation, but the overall structure and concepts are preserved to showcase the full RAP architecture and development process.
     
 ## How to reproduce
